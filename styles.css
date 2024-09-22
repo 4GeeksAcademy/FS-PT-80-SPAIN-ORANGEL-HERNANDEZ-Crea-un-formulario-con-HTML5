@@ -1,0 +1,16 @@
+textarea {
+    border-color: lightgrey;
+    width: 100%;
+}
+
+#opciones-de-pago {
+    width: 100%;
+}
+
+#bottom {
+    background-color: rgba(241, 238, 238, 0.988);
+} 
+
+#top {
+    background-color: rgba(241, 238, 238, 0.988);
+}
