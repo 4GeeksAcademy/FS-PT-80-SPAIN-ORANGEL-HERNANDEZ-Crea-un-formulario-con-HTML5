@@ -11,7 +11,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12 col-xlg-12">
+        <div class="col-12">
    <div class="container border mt-4 p-0">
     <div class="container-fluid">
     <div class="row border border-bottom">
@@ -33,15 +33,15 @@
     </div>
     <div class="container-fluid">
      <div class="row">
-        <div class="col-5">
+        <div class="col-sm-12 col-md-12 col-lg-5 col-xlg-5">
             <label for="number" class="form-label">Card #</label>
             <input type="number" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXX" required>
           </div>
-          <div class="col-3">
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xlg-3">
             <label for="number" class="form-label">CVC #</label>
             <input type="number" class="form-control" id="inputCvc" placeholder="0000">
           </div>
-          <div class="col-4">
+          <div class="col-sm-12 col-md-12 col-lg-4 col-xlg-4">
             <label for="number" class="form-label">Amount</label>
             <div row>
               <div class="col-12 d-flex">
@@ -54,11 +54,11 @@
     </div>
     <div class="container-fluid pt-3">
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xlg-6">
                 <label for="name" class="form-label">First Name</label>
                 <input type="text" class="form-control" id="inputFirstname">
               </div>
-              <div class="col-6">
+              <div class="col-sm-12 col-md-12 col-lg-6 col-xlg-6">
                 <label for="name" class="form-label">Last Name</label>
                 <input type="text" class="form-control" id="inputLastname">
               </div>
@@ -66,11 +66,11 @@
     </div>
     <div class="container-fluid">
      <div class="row pt-3">
-        <div class="col-6">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xlg-6">
             <label for="name" class="form-label">City</label>
             <input type="text" class="form-control" id="inputCity">
           </div>
-          <div class="col-3">
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xlg-3">
             <label for="inputState" class="form-label">State</label>
             <select id="inputState" class="form-select">
               <option selected>Pick a state</option>
@@ -79,7 +79,7 @@
               <option>Florida</option>
             </select>
           </div>
-          <div class="col-3">
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xlg-3">
             <label for="name" class="form-label">Postal Code</label>
             <input type="text" class="form-control" id="inputPostalCode">
           </div> 
@@ -90,8 +90,8 @@
      <div class="col-12 pt-3">
       <fieldset class="row mb-6">
         <legend class="col-form-label col-xsm-12 col-sm-12 col-md-8 col-lg-6 col-xl-6">We accept:
-        <div id="opciones-de-pago" class="col-xsm-12 col-sm-8 col-md-10 col-lg-8 col-xl-12">
-          <div  class="d-flex justify-content-between col-xsm-6 col-sm-8 col-md-8 col-lg-8 col-xl-6 bt-2 ps-2 pe-1 pt-1 pb-1 bg-secondary m-3 me-0 border rounded-pill">
+        <div class="col-xsm-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 w-100">
+          <div  class="d-flex justify-content-between col-xsm-12 col-sm-12 col-md-12 col-lg-8 col-xl-6 bt-2 ps-1 pe-1 pt-1 pb-1 bg-secondary m-3 me-0 ms-0 border rounded-pill">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
               <label class="form-check-label" for="gridRadios1">
@@ -120,12 +120,11 @@
         </div>
       </legend>
        
-      <legend class="col-xsm-12 col-sm-10 col-md-8 col-lg-12 col-xl-6 col-form-label">
-      Message
-       
-      <div class="col-xsm-12 col-sm-12 col-md-12 col-lg-8 col-xl-12">
-      <textarea name="add any notes here" rows="4" cols="70"></textarea>
-      </div>
+
+             <div class="col-sm-12 col-md-12 col-lg-6 col-xlg-6">
+        <label for="notes" class="form-label">Message</label>
+        <textarea id="notes" class="form-control" rows="4" placeholder="Add any notes here"></textarea>
+    </div>
         <figcaption class="pb-3">
         Add any notes here.
         </figcaption>
